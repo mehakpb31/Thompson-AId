@@ -342,7 +342,61 @@
         <label class="field"><span>Message</span><textarea name="message" rows="6"></textarea></label>
         <button class="submit" type="submit"><span>Submit</span></button>
       </form> -->
-      <form class="form" id="quoteForm">
+    <!--   <form class="form" id="quoteForm">
+        <div class="field">
+          <label for="name">Full Name*</label>
+          <input id="name" name="name" required />
+        </div>
+        <div class="field two">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email"  />
+          </div>
+          <div>
+            <label for="phone">Phone*</label>
+            <input id="phone" name="phone" type="tel" required />
+          </div>
+        </div>
+        <div class="field two">
+          <div>
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select</option>
+              <option>Moving — Local / Regional</option>
+              <option>Moving — Long Distance</option>
+              <option>Packing Only</option>
+              <option>Cleaning — Move-In / Move-Out</option>
+              <option>Cleaning — Deep Clean</option>
+              <option>Cleaning — Post-Renovation</option>
+              <option>Bundle — Moving + Cleaning</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="date">Preferred Date</label>
+            <input id="date" name="date" type="date" />
+          </div>
+        </div>
+        <div class="field two">
+          <div>
+            <label for="from">Moving From</label>
+            <input id="from" name="from" placeholder="Address or area" />
+          </div>
+          <div>
+            <label for="to">Moving To</label>
+            <input id="to" name="to" placeholder="Address or area" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="details">Additional Details</label>
+          <textarea id="details" name="details" rows="4" placeholder="Rooms, special items, cleaning focus, etc."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit"><i class="fa-regular fa-paper-plane"></i> Request Quote</button>
+      </form> -->
+      <form class="form" id="quoteForm" action="https://api.web3forms.com/submit" method="POST">
+        
+        <input type="hidden" name="access_key" value="8e92b9da-2539-433d-a721-875b529ade47">
+
         <div class="field">
           <label for="name">Full Name*</label>
           <input id="name" name="name" required />
